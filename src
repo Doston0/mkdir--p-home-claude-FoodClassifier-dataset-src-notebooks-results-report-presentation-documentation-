@@ -1,0 +1,1 @@
+mkdir -p /home/claude/FoodClassifier/{dataset,src,notebooks,results,report,presentation,documentation} && echo "done"
