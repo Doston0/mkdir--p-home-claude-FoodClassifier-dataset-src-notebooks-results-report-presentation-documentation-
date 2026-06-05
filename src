@@ -1,1 +1,4 @@
 mkdir -p /home/claude/FoodClassifier/{dataset,src,notebooks,results,report,presentation,documentation} && echo "done"
+npm list -g docx 2>/dev/null | head -3; node -e "require('docx'); console.log('docx ok')" 2>/dev/null || npm install -g docx 2>&1 | tail -3
+cd /home/claude/FoodClassifier/report && node generate_report.js 2>&1
+python3 /mnt/skills/public/docx/scripts/office/validate.py /home/claude/FoodClassifier/report/technical_report.docx 2>&1
